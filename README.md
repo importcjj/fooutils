@@ -1,4 +1,6 @@
 # fooutils
+[![Build Status](https://travis-ci.org/importcjj/fooutils.svg?branch=master)](https://travis-ci.org/importcjj/fooutils)
+
 乱七八糟的工具包
 
 ## 安装
