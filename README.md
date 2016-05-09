@@ -1,6 +1,9 @@
 # fooutils
 乱七八糟的工具包
 
+## 安装
+```go get github.com/importcjj/fooutils```
+
 #### 1.检测身份证号码是否有效
 
 ```go
