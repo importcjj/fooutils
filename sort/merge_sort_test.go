@@ -16,9 +16,7 @@ func TestIntMergeSort(t *testing.T) {
 }
 
 func BenchmarkIntMergeSort(b *testing.B) {
-	b.StopTimer()
-	slice := []int{5, 4, 3, 2, 1, 9, 8, 7, 6, 3, 4, 5, 6}
-	b.StartTimer()
+	slice := []int{5, 5, 6, 6, 2, 3, 1, 4, 99, 23, 23, 4, 5}
 
 	for i := 0; i < b.N; i++ {
 		s := make([]int, 13)
