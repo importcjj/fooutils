@@ -1,7 +1,5 @@
 package tree
 
-import "fmt"
-
 type BinaryTreeNode struct {
 	Value interface{}
 	Left  *BinaryTreeNode
@@ -49,21 +47,5 @@ func (root *BinaryTreeNode) PostOrderTraversal(callback TraversalCallback) {
 		root.Right.PostOrderTraversal(callback)
 	}
 	callback(root.Value)
-
-}
-
-func main() {
-
-	root := &BinaryTreeNode{"Hello, root", nil, nil}
-	root.Left = &BinaryTreeNode{"Hello, left", nil, nil}
-	root.Right = &BinaryTreeNode{"Hello, right", nil, nil}
-	root.Left.Left = &BinaryTreeNode{"Hello, left2", nil, nil}
-	root.Left.Right = &BinaryTreeNode{"Hello, right2", nil, nil}
-
-	root.PreOrderTraversal(func(value interface{}) { fmt.Println(value) })
-	fmt.Println()
-	root.InOrderTraversal(func(value interface{}) { fmt.Println(value) })
-	fmt.Println()
-	root.PostOrderTraversal(func(value interface{}) { fmt.Println(value) })
 
 }
